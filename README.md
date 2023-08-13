@@ -21,7 +21,7 @@ Data classification
 - Data destination `who to share with`
 - Amount shared `single credit card number vs 1000`
 - Exposure impact `prompt the user with a tool tip to educate them about the consequences`
-### Govern your data
+## Govern your data
 Data Lifecycle Management
 Records management
 - Streamlined administration `one policy across multiple services`
