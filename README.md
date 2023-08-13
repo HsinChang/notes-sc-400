@@ -50,4 +50,4 @@ Records management
   - Test
   - Publish
 ## Review sensitive information and label usage
-![The Overview page](notes-sc-400\figs\data-classification-overview.png)
+![The Overview page](figs\data-classification-overview.png)
