@@ -1,6 +1,6 @@
 # notes-sc-400
 A mindmap for SC-400 Microsoft Information Protector Administrator using markmap
-# Introduction
+# Introduction to information protection and data lifecycle management in Microsoft Purview
 ## Know your data
 Data classification
 - Sensitive information types
@@ -27,3 +27,27 @@ Records management
 - Streamlined administration `one policy across multiple services`
 - Automation at scale `policy work automatically and applied organization-wide`
 - Tailored workflows `custom events: eg departure of an employee`
+# Classify data for protection and governance
+## Sensitive information types (SIT)
+- Built-in SITs `such as social security numbers, credit card numbers, and email addresses, can't be edited, can serve as templates for creating custom sensitive information types`
+- Named entity SITs `such as person names, physical addresses, or medical terms and conditions, predefined and can't be edited or copied`
+- Custom SITs
+- Exact data match (EDM)-based SITs `built from scratch`
+### SIT consists
+- Name
+- Description
+- Pattern
+  - Primary element
+  - Supporting element
+  - Confidence Level
+  - Proximity
+### Creation
+`By UI, EDM, Powershell`
+## Classify data using trainable classifiers
+- Pre-Trained Classifiers
+- Custom Trainable Classifiers `A one-time scan must be completed before creating any custom trainable classifiers. This process takes 7 to 14 days.`
+  - Seed
+  - Test
+  - Publish
+## Review sensitive information and label usage
+![The Overview page](notes-sc-400\figs\data-classification-overview.png)
