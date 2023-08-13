@@ -50,4 +50,15 @@ Records management
   - Test
   - Publish
 ## Review sensitive information and label usage
+The Overview page
 ![The Overview page](/figs/data-classification-overview.png)
+- Top sensitive info types
+- Top sensitivity labels applied to content
+- Top retention labels applied to content
+- Top activities detected
+- Locations where sensitivity labels are applied
+- Locations where retention labels are applied
+- Azure Information Protection labels summary
+## Explore labeled and sensitive content
+Content explorer
+![](figs/content-explorer.png)
