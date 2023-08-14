@@ -49,8 +49,7 @@ Records management
   - Seed
   - Test
   - Publish
-## Review sensitive information and label usage
-The Overview page
+## The Overview page
 ![The Overview page](/figs/data-classification-overview.png)
 - Top sensitive info types
 - Top sensitivity labels applied to content
@@ -59,6 +58,40 @@ The Overview page
 - Locations where sensitivity labels are applied
 - Locations where retention labels are applied
 - Azure Information Protection labels summary
-## Explore labeled and sensitive content
-Content explorer
+## Content explorer
 ![](figs/content-explorer.png)
+- amount of sensitive data in a document
+- filter by label or sensitive information type
+- Integrated viewer to display detected documents
+## Activity explorer
+### activities
+- File created
+- File modified
+- File renamed
+- File copied to cloud
+- File accessed by unallowed app
+- File printed
+- File copied to removable media
+- File copied to network share
+- File read
+- File copied to clipboard
+- Label applied
+- Label changed
+### filters
+- date range
+- activity type
+- location
+- user
+- sensitivity label
+- retention label
+## Compare built-in versus custom sensitive information types
+### SIT PARTS
+- Primary pattern
+- Additional evidence
+- Character proximity
+- Confidence level
+### special features of custom SITs
+- Exact Data Match (EDM)-based classification `exact values`
+- Document Fingerprinting `standard -> sensitive`
+- Keyword dictionaries `less accurate than EDM-based`
+
