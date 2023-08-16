@@ -108,9 +108,23 @@ Records management
 - `Set up EDM-based classification -> Hash and upload the sensitive data -> Use EDM-based classification with your Microsoft cloud services`
 ## document fingerprinting
 won't detect sensitive information in the following cases:
-
 - Password protected files.
 - Documents that only contain images.
 - Documents that don't contain all the text from the original form used to create the document fingerprint.
 ## keyword dictionary
 # Apply and manage sensitivity labels
+## 
+Only a label with encryption can have access rules to prevent other user to edit or open the file.
+apply a label to a Group and SharePoint site.
+- Creation wizard of a Group or SharePoint Site
+- SharePoint Admin Center for existing ones
+- Microsoft Teams Admin Center for existing ones
+- Azure portal
+- PowerShell
+## on-premises labeling
+- unified labeling scanner
+## email and files
+- manual
+- auto-apply functionality `Default label for new, by sensitive information types / with or without a hint, by trainable classifiers`
+## label analytics
+## Microsoft Sentinel
