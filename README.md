@@ -94,4 +94,23 @@ Records management
 - Exact Data Match (EDM)-based classification `exact values`
 - Document Fingerprinting `standard -> sensitive`
 - Keyword dictionaries `less accurate than EDM-based`
+# Create and manage sensitive information types
+## Compare built-in versus custom sensitive information types
+### Sensitive information type parts
+- Primary pattern `Employee ID numbers, project numbers, etc. usually regex`
+- Additional evidence `ep: . Not all nine-digit numbers are employee ID numbers, so you can look for more text with keywords like "employee", "badge", "ID"`
+- Character proximity `proximity window: the character distance between the primary pattern and the supporting evidence`
+- Confidence level `Higher confidence means more evidence and fewer false positives, while lower confidence means less evidence and more false negatives.`
+### Custom sensitive information type features
+- Exact Data Match (EDM)-based classification `when large quantities of sensitive information need to be matched daily`
+- Document Fingerprinting `Converts a standard form into a sensitive information type`
+- Keyword dictionaries `manage reused keyword lists for matching company information on a large scale`
+## EDM-based classification
+- exact data match
+- `Set up EDM-based classification -> Hash and upload the sensitive data -> Use EDM-based classification with your Microsoft cloud services`
+## document fingerprinting
+won't detect sensitive information in the following cases:
 
+- Password protected files.
+- Documents that only contain images.
+- Documents that don't contain all the text from the original form used to create the document fingerprint.
