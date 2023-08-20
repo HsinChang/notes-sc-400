@@ -18,3 +18,21 @@ Retention policy precedence
 - Name your policy
 - Locations
 - Review your settings
+### Import data for Data Lifecycle Management
+## Manage data retention in Microsoft 365 workloads 
+### in Exchange Online
+![](figs/mailbox-hidden-folders.png)
+### in SharePoint Online and OneDrive
+Preservation Hold Libraries
+### in Teams
+When user leave
+- Documents and Files `same as SharePoint and OneDrive`
+- Chat messages `inactive mailbox, remain subject to any retention policy`
+- Channel messages `in Azure database and the mailbox, unaffected`
+### in Yammer
+- Documents and Files ``
+### Recover content
+deletion
+versioning
+### Microsoft Exchange
+## Manage records in Microsoft Purview
