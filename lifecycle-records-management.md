@@ -36,3 +36,7 @@ deletion
 versioning
 ### Microsoft Exchange
 ## Manage records in Microsoft Purview
+### Import a file plan
+### Configure retention labels
+### Event driven retention
+### Manage, monitor, and remediate records
