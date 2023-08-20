@@ -19,3 +19,15 @@ Compliance score
 ### create a content search
 ### View the search results and statistics
 ### search permissions filtering
+### Search for and delete email messages
+## Microsoft Purview eDiscovery (Standard)
+### eDiscovery holds
+Holds preserve content that may be relevant to a case. 24 hours to take effect, 30-day grace period
+### Search for content in a case
+### Export
+### Close, reopen, and delete a case
+## Manage Microsoft Purview eDiscovery (Premium)
+### custodians and non-custodial data sources
+Custodians in eDiscovery are persons who own or control data that could be relevant to a case.
+## Audit (Standard)
+![](figs/audit-solutions-comparison-0934065e.png)
