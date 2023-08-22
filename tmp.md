@@ -19,4 +19,8 @@ You can create an auto-labeling policy named Passport Number Policy and select t
     - Collect at least 200 test content items (10,000 max) for best results.
 12. You should run the New-OMEConfiguration cmdlet to create a new OME configuration. Then, modify the branding template using Set-OMEConfiguration cmdlet. OME(Office Message Encryption), Information Rights Management (IRM)
 13. You can upload data with the EDMUploadAgent to any given data store only twice per day. EDM(Exact Data Match)
-14. 
+14. you should create a mail flow rule that applies the Encrypt action to all email messages sent to fabrikam.com. You can use the Apply this rule if… condition to specify the recipient domain. (needs recheck)
+15. you cannot modify a policy template in MCAS. You can create policies from policies templates. (nice question)
+16. Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, *the email is labeled but not the attachment*.
+17. 
+    
