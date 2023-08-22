@@ -17,4 +17,6 @@ You can create an auto-labeling policy named Passport Number Policy and select t
     - Sign in to the Microsoft Purview compliance portal with either Compliance admin or Security admin role access and navigate to Data classification > Classifiers.
     - Within 24 hours the trainable classifier will process the seed data and build a prediction model. 
     - Collect at least 200 test content items (10,000 max) for best results.
-12. 
+12. You should run the New-OMEConfiguration cmdlet to create a new OME configuration. Then, modify the branding template using Set-OMEConfiguration cmdlet. OME(Office Message Encryption), Information Rights Management (IRM)
+13. You can upload data with the EDMUploadAgent to any given data store only twice per day. EDM(Exact Data Match)
+14. 
