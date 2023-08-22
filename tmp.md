@@ -1,3 +1,7 @@
+1. no auto, no empty policies for  
+2. Cloud App Security currently supports applying Azure Information Protection classification labels for the following file types: Word, Excel, PowerPoint, PDF, The policy will classify only 100 files daily.
+3. The max size for the OME encryption functionality is 25 mb and all file extension are not covered by the OME encryption. You can only encrypt docx files, powerpoint files and excel files. The following are the one supported,
+Old file extension such as xls, doc and ppt are not supported.
 5. You cannot apply watermarks to email, so the header will only get applied.
 But you can for sure add both watermarks and headers to documents located at Sharepoint.
 6. You can create a sensitivity label named Passport Number and configure it to apply encryption and a watermark to the content. You can also choose to restrict access to specific users or groups, or block external sharing.
