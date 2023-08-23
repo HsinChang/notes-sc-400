@@ -40,4 +40,44 @@ $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Template -Descrip
 New-DlpSensitiveInformationType -Name "Contoso Employee-Customer Confidential" -Fingerprints $Employee_Fingerprint[0],$Customer_Fingerprint[0] -Description "Message contains Contoso employee or customer information.
 ```
 26. Run the `Set-OMEMessageRevocation` cmdlet.
-27. 
+27. The only prerequisite for using the new OME capabilities is that **Azure Rights Management** must be activated in your organization's tenant. If it is, Microsoft 365 activates the new OME capabilities automatically and you don't need to do anything.
+28. You want to seed with **only good** documents **to train** your trainable classifier correctly so that it knows what to look for.
+When you **test** it you want **both good and bad** examples to know if it can detect both false and true positives.
+29. the Global admin needs to opt in for the tenant to create custom classifiers.
+Compliance Administrator role is required to train a classifier.
+Retention label policy scenario: Record Management and Retention Management roles
+Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
+Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator
+30. You can't automatically label documents and emails until your policy has run at least one simulation.
+31. fiscal year
+32. To **retrain** a trainable classifier you can easily do this through **Content Explorer** found under the same tab as you can find Trainable Classifier, under Data Classification.
+33. Keyword dictionaries can be created either from a text file or from csv file.
+Note:
+There are several versions of this question in the exam. The question has two possible correct answers:
+a **CSV file** that contains words separated by **commas**
+a **text file** that has **one word on each line**
+34. Don't choose a parent label as the default label, or configure a parent label to be automatically applied (or recommended). If you do, the parent label can't be applied.
+35. Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following configurations for encryption:
+✑ Let users assign permissions when they apply the label and the checkbox In Word, PowerPoint, and Excel, prompt users to specify permissions is selected.
+This configuration is sometimes referred to as "user-defined permissions".
+✑ User access to content expires is set to a value other than Never.(should not be never)
+Double Key Encryption is selected. (should be unselected)
+36. (revisit)
+37. Web apps `Microsoft SharePoint Online and OneDrive` need to be enabled separately for sensitivity labels.
+38. ![](figs/image164.png)
+39. Keyword dictionaries = Sensitive info type
+40. If there's a conflict in settings from multiple policies, the settings from the policy with the highest priority (highest order number) is applied.
+41. Always custom branding templates for this, you can use the following cmdlet
+```powershell
+New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+```
+42. 
+43. Content Explorer, Compliance Data Administrator
+44. File Policies allow you to enforce a wide range of automated processes using the cloud provider's APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases.
+Note:
+There are several versions of "**share sensitive documents** from Microsoft OneDrive to any users **outside** your company" in the exam. The question has two possible correct answers:
+**From the Microsoft 365 compliance center, create a data loss prevention (DLP) policy.**
+**From the Cloud App Security portal, create a file policy.**
+Other incorrect answer options you may see on the exam include the following:
+✑ From the Microsoft 365 compliance center, start a data investigation.
+✑ From the Azure portal, create an Azure Information Protection policy.
