@@ -22,5 +22,13 @@ You can create an auto-labeling policy named Passport Number Policy and select t
 14. you should create a mail flow rule that applies the Encrypt action to all email messages sent to fabrikam.com. You can use the Apply this rule if… condition to specify the recipient domain. (needs recheck)
 15. you cannot modify a policy template in MCAS. You can create policies from policies templates. (nice question)
 16. Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, *the email is labeled but not the attachment*.
-17. 
+17. The keywords for your dictionary could come from various sources, most commonly from a file (such as a `.csv` or `.txt` list) imported in the service or by PowerShell cmdlet.
+18. You can revoke a mail that you sent to a single recipient that uses a social account such as gmail.com or yahoo.com. In other words, you can revoke an email sent to a single recipient that received the link-based experience.
+You cannot revoke a mail that you sent to a recipient that uses a work or school account from Office 365 or Microsoft 365 or a user that uses a Microsoft account, for example, an outlook.com account.
+19. (outdated)
+20. (outdated)
+21. Mail Flow rule will fit the bill.
+22. requires revisit
+23. https://www.examtopics.com/discussions/microsoft/view/64731-exam-sc-400-topic-1-question-23-discussion/
+24. 
     
