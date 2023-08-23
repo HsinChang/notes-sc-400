@@ -30,5 +30,15 @@ You cannot revoke a mail that you sent to a recipient that uses a work or school
 21. Mail Flow rule will fit the bill.
 22. requires revisit
 23. https://www.examtopics.com/discussions/microsoft/view/64731-exam-sc-400-topic-1-question-23-discussion/
-24. 
-    
+24. The Schema of EDM SITs is in XML, but only data hashes are uploaded via EDM upload agent. 
+25. ```powershell
+$Employee_Template = [System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Employee Template.docx')
+
+$Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
+
+$Customer_Template = [System.IO.File]::ReadAllBytes('D:\Data\Contoso Customer Template.docx')
+
+$Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Template -Description "Contoso Customer Template"
+
+New-DlpSensitiveInformationType -Name "Contoso Employee-Customer Confidential" -Fingerprints $Employee_Fingerprint[0],$Customer_Fingerprint[0] -Description "Message contains Contoso employee or customer information."
+```
