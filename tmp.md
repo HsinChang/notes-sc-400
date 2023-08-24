@@ -81,3 +81,27 @@ There are several versions of "**share sensitive documents** from Microsoft OneD
 Other incorrect answer options you may see on the exam include the following:
 ✑ From the Microsoft 365 compliance center, start a data investigation.
 ✑ From the Azure portal, create an Azure Information Protection policy.
+45. (requires recheck)
+## Topic 2
+1. SQ
+2. 
+- **Third-party DLP policy matches**: These are matches that occur when a third-party DLP solution is integrated with Microsoft 365.
+- **DLP policy matches**: These are matches that occur when a DLP policy is triggered.
+- **DLP incidents**: These are events that occur when a DLP policy is triggered and an action is taken.
+- **False positives**: These are events that occur when a DLP policy is triggered but the content does not actually contain sensitive information.
+- **Overrides**: These are events that occur when a user overrides a DLP policy.
+3. SQ
+4. SQ
+5. 
+## Scenario questions
+1. You implement Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
+You have computers that run Windows 10 and have Microsoft 365 Apps installed. The computers are joined to Azure Active Directory (Azure AD).
+You need to ensure that Endpoint DLP policies can protect content on the computers.
+Correct solutions:
+**onboard the computers to Microsoft Defender for Endpoint**
+**deploy the Endpoint DLP configuration package**
+2. You are configuring a file policy in Microsoft Cloud App Security.
+You need to configure the policy to apply to all files. Alerts must be sent to every file owner who is affected by the policy. The policy must scan for credit card numbers, and alerts must be sent to the Microsoft Teams site of the affected department.
+Correct solutions:
+use the Build-in DLP inspection method and send alerts to Microsoft Power Automate.
+
