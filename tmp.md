@@ -99,21 +99,75 @@ Other incorrect answer options you may see on the exam include the following:
 Rule2, both Rule2 and Rule4 have the same restrictivness so we have to look at the priority level here which means Rule2 gets applied.
 8. SQ
 9. review the potential impact of enabling the policy without applying the actions. -> *Edit the policy, and then select I'd like to test it out first.*
-10. 
+10. SQ
+11. SQ
+12. SQ
+13. You have to try this out to remember this better imo, when you create a DLP policy **with all the location choosed** you can only choose the following conditions
+- **Content contains**
+- Content is **shared from M365**
+14. If you want to view the DLP alert management dashboard or to edit the alert configuration options in a DLP policy, you must be a member of one of these role groups:
+```
+Compliance Administrator
+Compliance Data Administrator
+Security Administrator
+Security Operator
+Security Reader
+```
+To access the DLP alert management dashboard, you need the Manage alerts role and either of the following roles:
+```
+DLP Compliance Management
+View-Only DLP Compliance Management
+```
+15. You need to be **alerted** when users **share sensitive** documents from Microsoft **OneDrive** to any users outside your company.
+What should you do?
+From the Microsoft 365 compliance center, create a data loss prevention (DLP) policy.
+From the Cloud App Security portal, create a file policy.
+16. when outside your organization or with unauthorized users are mentioned -> DLP
+17. *Default notifications settings* are: The person who sent, shared, or modified the content / Owner of the SharePoint site or OneDrive account/ Owner of the SharePoint or OneDrive content.
+18. given sites -> service domains
+19. Outdated question, windows 10,11 and MacOS are supported for Endpoint DLP
+20. dupe Q
+21. regex, recheck
+22. sq
+23. sq
+24. sq
+25. sq
+26. sq
+27. sq
+28. CE, bit confusing
+29. With 1 policy you cannot choose both Audit and Block. policies are the top-level containers that define the scope, mode, and notifications of DLP enforcement. 
+30. dup
+31. Create a fingerprint of AssessmentTemplate.docx.
+32. disputes, go with **alert filter**
+33. DLP policy that will protect *documents shared in Teams chat* = Onedrive
+*Teams channels* = Sharepoint
 ## Scenario questions
+
 1. You implement Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
 You have computers that run Windows 10 and have Microsoft 365 Apps installed. The computers are joined to Azure Active Directory (Azure AD).
 You need to ensure that Endpoint DLP policies can protect content on the computers.
 Correct solutions:
 **onboard the computers to Microsoft Defender for Endpoint**
 **deploy the Endpoint DLP configuration package**
-2. You are configuring a file policy in Microsoft Cloud App Security.
-You need to configure the policy to apply to all files. Alerts must be sent to every file owner who is affected by the policy. The policy must scan for credit card numbers, and alerts must be sent to the Microsoft Teams site of the affected department.
+1. You are configuring a file policy in Microsoft Cloud App Security.
+You need to configure the policy to apply to all files. Alerts must be sent to every file owner who is affected by the policy. The policy must scan for credit card numbers, and **alerts** must be sent to the **Microsoft Teams site** of the affected department.
 Correct solutions:
-use the Build-in DLP inspection method and send alerts to Microsoft Power Automate.
-3. You recently discovered that the developers at your company emailed Azure Storage keys in plain text to third parties.
+use the Build-in DLP inspection method and send alerts to **Microsoft Power Automate**.
+Incorrect:
+Can't send email to the affected channel
+1. You recently discovered that the developers at your company emailed Azure Storage keys in plain text to third parties.
 You need to ensure that when Azure Storage keys are emailed, the emails are encrypted.
 Correct:
 **configure a mail flow rule that matches a sensitive info type**
 Incorrect:
  A DLP policy can only detect, audit, and block sensitive information from being shared, but it cannot encrypt the emails by itself, but works if **only exchange location is selected**
+1. You have a Microsoft 365 tenant and 500 computers that run Windows 10. The computers are onboarded to the Microsoft 365 compliance center.
+You discover that a third-party application named Tailspin_scanner.exe accessed protected sensitive information on multiple computers.
+Tailspin_scanner.exe is installed locally on the computers.
+You need to block Tailspin_scanner.exe from accessing sensitive documents without preventing the application from accessing other documents.
+Correct:
+**unallowed apps list** from m the Microsoft 365 Endpoint data loss prevention (Endpoint DLP) settings
+Incorrect:
+*app discovery policies* to alert you when new apps are detected within your organization
+Folder path to the *file path exclusions* excludes certain paths and files from DLP monitoring.
+1. 
