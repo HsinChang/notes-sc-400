@@ -92,7 +92,14 @@ Other incorrect answer options you may see on the exam include the following:
 - **Overrides**: These are events that occur when a user overrides a DLP policy.
 3. SQ
 4. SQ
-5. 
+5. add Firefox and Google Chrome to the unallowed browsers list.
+   Create a DLP policy that applies to the Devices location. create a dlp policy which applies to location "Devices" and create a rule which applies to the label "Confidential" with the action "Upload to cloud service domains or access by unalloed browsers" -> "Block"
+6. Teams use `SharePoint` and `OneDrive` to store files, channels and chat also needs policy applied
+7. Rule2 will take place since it has the higher restrictions out of all of them - User Overrides ON is less restrictive than having it OFF.
+Rule2, both Rule2 and Rule4 have the same restrictivness so we have to look at the priority level here which means Rule2 gets applied.
+8. SQ
+9. review the potential impact of enabling the policy without applying the actions. -> *Edit the policy, and then select I'd like to test it out first.*
+10. 
 ## Scenario questions
 1. You implement Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
 You have computers that run Windows 10 and have Microsoft 365 Apps installed. The computers are joined to Azure Active Directory (Azure AD).
@@ -104,4 +111,9 @@ Correct solutions:
 You need to configure the policy to apply to all files. Alerts must be sent to every file owner who is affected by the policy. The policy must scan for credit card numbers, and alerts must be sent to the Microsoft Teams site of the affected department.
 Correct solutions:
 use the Build-in DLP inspection method and send alerts to Microsoft Power Automate.
-
+3. You recently discovered that the developers at your company emailed Azure Storage keys in plain text to third parties.
+You need to ensure that when Azure Storage keys are emailed, the emails are encrypted.
+Correct:
+**configure a mail flow rule that matches a sensitive info type**
+Incorrect:
+ A DLP policy can only detect, audit, and block sensitive information from being shared, but it cannot encrypt the emails by itself, but works if **only exchange location is selected**
