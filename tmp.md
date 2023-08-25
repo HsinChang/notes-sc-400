@@ -141,6 +141,51 @@ From the Cloud App Security portal, create a file policy.
 32. disputes, go with **alert filter**
 33. DLP policy that will protect *documents shared in Teams chat* = Onedrive
 *Teams channels* = Sharepoint
+34. different elements in a policy rule, such as:
+```
+The name and description of the rule
+The source and destination of the traffic or data
+The service or protocol of the traffic or data
+The action to take when the rule matches (such as allow, deny, block, audit, encrypt, etc.)
+The priority or order of the rule
+The schedule or duration of the rule
+The notification or alert of the rule
+```
+35.  retrieve a summary of the DLP rule matches from the last seven days:
+    Exchange Online and Get-DlpDetectionsReport.
+36. the ONLY actions the Endpoint DLP *can't* restrict is
+- **Create** an item
+- **Rename** an item
+37. Device onboarding is shared across Microsoft 365 and Microsoft Defender for Endpoint (MDE). If you've already onboarded devices to MDE, they will appear in the managed devices list and no further steps are necessary to onboard those specific devices. Onboarding devices in Compliance center also onboards them into MDE. *If you want to use endpoint DLP you have to onboard the devices* (recheck)
+38. instinctive
+39. sq
+40. sq
+41. sq
+42. sq
+43. outdated?
+44. Despite status showing resolved it still can be changed. Select alert > Under Alert status > Actions > select "Edit comments" > choose new status: *Active, Investigating, Dismissed or Resolved*.
+45. With all locations selected the sensitive info type is the only option left for DLP policy.
+46. source code -> trainable classifier
+47. maintain the sensitivity of DLP1 -> configure an alert threshold
+48. instinctive
+49. documents in Teams -> OneDrive
+50. Auto-labeling policies for retention labels can only apply to files that are supported by the trainable classifiers, which are:
+Word documents (.docx)
+PowerPoint presentations (.pptx)
+PDF documents (.pdf)
+Text files (.txt)
+Email messages (.eml)1
+Excel workbooks (.xlsx) are not supported by the trainable classifiers, so they will not be labeled by the auto-labeling policy.
+51. Moderate -> Forward the message for approval
+    Policy mode: Enable -> Enforce DLP rules
+52. disputes, go with suggested
+53. a **file policy** is a type of Microsoft Defender for Cloud Apps policy that allows you to monitor and control file sharing activities in your cloud apps, and detect DLP violations based on the content, context, and sensitivity labels of the files
+- A **Cloud Discovery anomaly detection policy** is a type of policy that allows you to detect anomalous activities and risky behaviors in your cloud environment, such as unusual locations, devices, or app usage patterns¹.
+- An **activity policy** is a type of policy that allows you to monitor and control user activities in your cloud apps, such as login, upload, download, or share¹².
+- A **session policy** is a type of policy that allows you to apply real-time controls and actions on user sessions in your cloud apps, such as block download, watermark, or redirect¹².
+54. 
+
+
 ## Scenario questions
 
 1. You implement Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
@@ -149,6 +194,8 @@ You need to ensure that Endpoint DLP policies can protect content on the compute
 Correct solutions:
 **onboard the computers to Microsoft Defender for Endpoint**
 **deploy the Endpoint DLP configuration package**
+Incorrect:
+Microsoft Intune, unified labeling client
 1. You are configuring a file policy in Microsoft Cloud App Security.
 You need to configure the policy to apply to all files. Alerts must be sent to every file owner who is affected by the policy. The policy must scan for credit card numbers, and **alerts** must be sent to the **Microsoft Teams site** of the affected department.
 Correct solutions:
@@ -158,9 +205,10 @@ Can't send email to the affected channel
 1. You recently discovered that the developers at your company emailed Azure Storage keys in plain text to third parties.
 You need to ensure that when Azure Storage keys are emailed, the emails are encrypted.
 Correct:
-**configure a mail flow rule that matches a sensitive info type**
+configure a **mail flow rule** that matches a **sensitive info type**
 Incorrect:
  A DLP policy can only detect, audit, and block sensitive information from being shared, but it cannot encrypt the emails by itself, but works if **only exchange location is selected**
+ a mail flow rule that matches the text patterns
 1. You have a Microsoft 365 tenant and 500 computers that run Windows 10. The computers are onboarded to the Microsoft 365 compliance center.
 You discover that a third-party application named Tailspin_scanner.exe accessed protected sensitive information on multiple computers.
 Tailspin_scanner.exe is installed locally on the computers.
@@ -170,4 +218,5 @@ Correct:
 Incorrect:
 *app discovery policies* to alert you when new apps are detected within your organization
 Folder path to the *file path exclusions* excludes certain paths and files from DLP monitoring.
+Make **unsanctioned** only prevents the application from accessing cloud resources that are protected by Microsoft Defender for Cloud Apps
 1. 
