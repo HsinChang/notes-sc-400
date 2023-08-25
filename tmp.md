@@ -183,7 +183,26 @@ Excel workbooks (.xlsx) are not supported by the trainable classifiers, so they 
 - A **Cloud Discovery anomaly detection policy** is a type of policy that allows you to detect anomalous activities and risky behaviors in your cloud environment, such as unusual locations, devices, or app usage patterns¹.
 - An **activity policy** is a type of policy that allows you to monitor and control user activities in your cloud apps, such as login, upload, download, or share¹².
 - A **session policy** is a type of policy that allows you to apply real-time controls and actions on user sessions in your cloud apps, such as block download, watermark, or redirect¹².
-54. 
+54. ![](figs/dlpscope.png)
+55. The DLP policy blocks everyone from accessing shared content that matches the rules, except for the content owner, the last modifier, and the site admin. The first uploader is not neccessarily the owner.
+56. sq
+## Topic 3
+1. In case of multi match, Microsoft keep the minimum of risk so it will not be deleted and keep the longest time of the policy.
+2. policy for scope, label for specifications
+3. If you REMOVE the tag only, everything (retention) stays the same in Exchange Mailbox, but the used won't be able to apply the tag to other mails of folders.
+If you DELETE the tag, then that also removes the retention policies from the emails of folders where it was originally applied.
+4. `Get-Mailbox cmdlet` provides all mailboxes that meet certain parameters.
+5. `Restore-RecoverableItems` and `Get-RecoverableItems`
+6. When a retention policy is locked:
+✑ No one, including the global admin, can disable the policy or delete it
+✑ Locations can be added but not removed
+You can extend the retention period but not decrease it
+7. hmm
+8.  retention policy -> container (site, mailbox) level
+    retention label policy -> item level
+9. To be able to treat the contracts as records with need retention labels.
+To mark automatically mark the contracts with can place the retention label as default label in the a document library
+
 
 
 ## Scenario questions
