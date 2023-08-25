@@ -202,9 +202,30 @@ You can extend the retention period but not decrease it
     retention label policy -> item level
 9. To be able to treat the contracts as records with need retention labels.
 To mark automatically mark the contracts with can place the retention label as default label in the a document library
-
-
-
+10. Although a retention policy can support multiple services that are identified as "locations" in the retention policy, you can't create a single retention policy that includes all the supported locations. If you select the **Teams or Viva Engage** locations when you create a retention policy, the other locations are automatically **excluded**.
+11. For SharePoint and OneDrive sites: The copy is retained in the Preservation Hold library. On (Pending) -> recycle bin
+For Exchange mailboxes: The copy is retained in the Recoverable Items folder.
+For Teams and Viva Engage messages: The copy is retained in a hidden folder named SubstrateHolds as a subfolder in the Exchange Recoverable Items folder.
+12. Regulatory records are the most restrictive type which means that you cannot do much to the files, they are well protected. In this case you will only be able to move the file WIHTHIN the container.
+13. The Disposition Management role is included in the Records Management default role group, which is assigned to Compliance Administrators by default. Global Administrators, Security Administrators, and Search Administrators do not have the Disposition Management role by default. (check above for roles)
+14. Where the Prerequisites for the Exchange Online PowerShell module hyperlink mentions the ExchangeOnlineManagement module being needed for the Connect-IPPSSession command.
+Use the Set-RegulatoryComplianceUI cmdlet to display the UI option in retention label settings to mark content as a regulatory record.
+IPPSSession is a **PowerShell session** that connects to the **Security & Compliance Center** in Microsoft 365.
+15. A retention policy is used to apply the same retention settings to entire locations or workloads, not specific files
+16. A new **event type** will make sure that the retention period will use **fiscal year** instead of when items were created
+17. The email will be moved to the archive mailbox after two years.
+To change the retention period for archiving, you should modify the Default MRM Policy. (Go with Bing)
+18. label -> label policy -> preservation lock
+19. You cannot use the OneDrive website, the OneDrive Recycle Bin, or the Restore your OneDrive feature to recover a file from a deleted OneDrive account, use **the Restore-SPODeletedSite PowerShell cmdlet**.
+    The Restore-SPODeletedSite PowerShell and the Restore-ADObject PowerShell are two different cmdlets that are used to restore different types of objects.
+The Restore-SPODeletedSite PowerShell is used to restore a **deleted SharePoint Online site collection** from the Recycle Bin.
+The Restore-ADObject PowerShell is used to restore a **deleted Active Directory object**
+20. (pay more attention on the year, not only the date)
+21. Sensitivity info type makes more sense to me, as it's focused on just the project documents in a site with "many files". If you do a trainable classifier you'd need a large set of "good" examples and this could take a while. But if you were to create a custom sensitive info type and use regex expressions then it should be simpler to implement.
+22. Teams channel conversations: documents shared -> Sharepoint
+Teams private chat: documents shared -> OneDrive for Bussiness
+23. same as mentioned, regulatory records are strict.
+24. 
 ## Scenario questions
 
 1. You implement Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
