@@ -225,7 +225,49 @@ The Restore-ADObject PowerShell is used to restore a **deleted Active Directory 
 22. Teams channel conversations: documents shared -> Sharepoint
 Teams private chat: documents shared -> OneDrive for Bussiness
 23. same as mentioned, regulatory records are strict.
-24. 
+24. Set -RetentionCompliancePolicy and -RetryDistribution are correct.
+25. `New-Mailbox -InactiveMailbox`
+26. an auto-labeling policy, a sensitive info type, a retention label
+27. importing a records management file plan -> retention labels
+28. `New-MailboxRestoreRequest -SourceMailbox`
+29. retention label policy of type **publish**: available for users to manually apply to their content
+**auto-apply**: applied automatically to content based on the conditions defined in the rule
+30. instinctive
+31. Disposition review can only performed members of Disposition Management Role, by default both Compliance Administrator och Compliance Data
+Administrator have access to this but NOT GA.
+32. DUPE
+33. dupe
+34. instinctive
+35. `ExchangeOnlineManagement Connect-IPPSSession Set-RegulatoryComplianceUI`
+36. **file plan** helps you create and manage retention labels.
+37. declare a collection of files that are stored in Library1 as regulatory records -> a retention label policy
+38. Create and publish a new retention label is a solution to this since we want to create a new rule for one file named FIle1 in Site1, this file will then get retained for 7 years instead of 5 years (what a strange question)
+39. Records Management role group
+40. Classifiers are available to use as a condition for:
+Office auto-labeling with sensitivity labels
+Auto-apply retention label policy based on a condition
+Communication compliance
+Sensitivity labels can use classifiers as conditions, see Apply a sensitivity label to content automatically.
+Data loss prevention
+41. If adaptiv scope is type "group" you have only following options:
+Teams channel Message,
+Yammer community messages,
+M365 group mailboxses & sites
+
+If adaptive scope type is "User":
+Exchange mailboxes
+OneDrive accounts
+OR (cann't be together)
+Teams chats
+Teams private channel messages
+Yammer user messages
+
+If adaptive scope type is "Site":
+SharePoint sites
+
+## 
+
+
 ## Scenario questions
 
 1. You implement Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
